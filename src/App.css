@@ -4,4 +4,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
+.bg-hero-pattern {
+    background-image: url(./assets/bn17.jpg);
+}

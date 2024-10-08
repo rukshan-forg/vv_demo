@@ -13,13 +13,13 @@ function Home() {
         <>
             <HeroSection/>
 
-            <div className="-mt-16"><WebDevelopmentSection/></div>
-            <div className="mt-12"><GraphicsDesignSection/></div>
-            <div className="mt-12"><TypingServicesSection/></div>
-            <div className="mt-12"><ArtServicesSection /></div>
+            <div><WebDevelopmentSection/></div>
+            <div><GraphicsDesignSection/></div>
+            <div><TypingServicesSection/></div>
+            <div><ArtServicesSection /></div>
 
-            <div className="mt-12"><Testimonials/></div>
-            <div className="mt-12"><OurTeam/></div>
+            <div><Testimonials/></div>
+            <div><OurTeam/></div>
 
             <Footer />
 

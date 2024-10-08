@@ -39,9 +39,9 @@ export default {
         primary: '#4f46e5',
         // You can add as many colors as you need
       },
-      backgroundImage: {
+      /*backgroundImage: {
         'hero-pattern': "url('./src/assets/bn17.jpg')", // Replace with your image path
-      },
+      },*/
       keyframes: {
         fadeInLeft: {
           '0%': {
@@ -85,10 +85,10 @@ export default {
         },
       },
       animation: {
-        fadeInLeft: 'fadeInLeft 1s ease-in-out',
-        fadeInRight: 'fadeInRight 1s ease-in-out',
-        fadeInUp: 'fadeInUp 1s ease-in-out',
-        fadeInDown: 'fadeInDown 1s ease-in-out',
+        fadeInLeft: 'fadeInLeft 0.7s ease-in-out',
+        fadeInRight: 'fadeInRight 0.7s ease-in-out',
+        fadeInUp: 'fadeInUp 0.7s ease-in-out',
+        fadeInDown: 'fadeInDown 0.7s ease-in-out',
       },
     },
   },

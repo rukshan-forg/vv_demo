@@ -1,9 +1,9 @@
 
 export default function HeroSection() {
     return (
-        <section className="relative bg-hero-pattern bg-no-repeat bg-cover bg-center h-screen flex items-center justify-center">
+        <section className="relative bg-hero-pattern bg-no-repeat bg-cover bg-center h-screen flex items-center justify-center mb-14">
             <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-font-HEADER">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-font-BUTTON">
                     Build Your Vision with <span className="text-primary">VisualVerse</span>
                 </h1>
                 <p className="mt-4  md:text-xl max-w-2xl mx-auto font-medium text-font-PARAGRAPH">
