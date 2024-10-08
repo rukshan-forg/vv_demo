@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
-const PortfolioSection = ({ title, projects }) => {
+const PortfolioSection = ({ title, projects,seeMore }) => {
     return (
         <section id="portfolio" className="bg-gray-50 py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +12,8 @@ const PortfolioSection = ({ title, projects }) => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div key={index}
+                             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <img
                                 src={project.image}
                                 alt={project.title}
@@ -39,6 +41,14 @@ const PortfolioSection = ({ title, projects }) => {
                     ))}
                 </div>
             </div>
+            <div className="text-center mt-8 ">
+                <Link
+                    to={seeMore}
+                    className="underline text-blue-600 hover:text-blue-800 transition duration-300"
+                >
+                    See More
+                </Link>
+            </div>
         </section>
     );
 };
@@ -54,6 +64,7 @@ PortfolioSection.propTypes = {
             link: PropTypes.string.isRequired,  // Link to case study or project
         })
     ).isRequired,
+    seeMore: PropTypes.string.isRequired
 };
 
 export default PortfolioSection;

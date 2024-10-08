@@ -166,7 +166,7 @@ const WebDev = () => {
             <PortfolioSection
                 title="Our Successful Projects"
                 projects={projects}
-            />
+                seeMore={"/web/projects"}/>
 
             <AboutMe
                 name="John Doe"

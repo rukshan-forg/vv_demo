@@ -7,6 +7,7 @@ import TechnologiesSection from "../coman/TechnologiesSection.jsx";
 import PortfolioSection from "../coman/PortfolioSection.jsx";
 import AboutMe from "../coman/AboutMe.jsx";
 import ContactUs from "../coman/ContactUs.jsx";
+import QuickNav from "../coman/QuickNav.jsx";
 
 const ArtDev = () => {
 
@@ -118,6 +119,8 @@ const ArtDev = () => {
 
     return (
         <div>
+            <QuickNav />
+
             <HeroSection
                 title="Creative Art & Design Services"
                 subtitle="Bring your visions to life with stunning artwork and modern graphic design."
@@ -139,7 +142,7 @@ const ArtDev = () => {
             <PortfolioSection
                 title="Our Artistic Creations"
                 projects={projects}
-            />
+                seeMore={"/art/projects"}/>
 
             <AboutMe
                 name="Jane Doe"

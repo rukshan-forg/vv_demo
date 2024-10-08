@@ -7,6 +7,7 @@ import TechnologiesSection from "../coman/TechnologiesSection.jsx";
 import PortfolioSection from "../coman/PortfolioSection.jsx";
 import AboutMe from "../coman/AboutMe.jsx";
 import ContactUs from "../coman/ContactUs.jsx";
+import QuickNav from "../coman/QuickNav.jsx";
 
 const TypingDev = () => {
 
@@ -120,6 +121,9 @@ const TypingDev = () => {
 
     return (
         <div>
+
+            <QuickNav />
+
             <HeroSection
                 title="Professional Typing and Data Entry Services"
                 subtitle="Accurate and Efficient Typing Services to Meet Your Business Needs"
@@ -141,6 +145,7 @@ const TypingDev = () => {
             <PortfolioSection
                 title="Our Successful Projects"
                 projects={projects}
+                seeMore={"/typing/projects"}
             />
 
             <AboutMe
